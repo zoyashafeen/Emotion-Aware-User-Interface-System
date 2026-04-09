@@ -1,0 +1,19 @@
+import { createBrowserRouter } from "react-router";
+import LoginPage from "./pages/LoginPage";
+import ExamDashboard from "./pages/ExamDashboard";
+import PerformanceSummary from "./pages/PerformanceSummary";
+
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    Component: LoginPage,
+  },
+  {
+    path: "/exam",
+    Component: ExamDashboard,
+  },
+  {
+    path: "/summary",
+    Component: PerformanceSummary,
+  },
+]);
